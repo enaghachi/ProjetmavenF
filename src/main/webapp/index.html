@@ -1,0 +1,95 @@
+
+<html>
+    <head>
+        <title>tweety</title>
+        <link href="bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+        
+		<!--[if IE 7]><link rel="stylesheet" media="all" type="text/css" href="bootstrap/css/ie7.css" />
+		<![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" media="all" type="text/css" href="bootstrap/css/ie8.css" />
+		<![endif]-->
+		<link href="bootstrap/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+		<!--slidercss-->
+		<link rel="stylesheet" href="bootstrap/css/basic-jquery-slider.css" />
+		<script src="bootstrap/js/jquery-1.6.2.min.js" type="text/javascript" language="javascript"></script>
+		<script src="bootstrap/js/basic-jquery-slider.js"  type="text/javascript" language="javascript"></script>
+		<script type="text/javascript" src="bootstrap/js/custom.js" language="javascript"></script>
+		<script type="text/javascript" src="bootstrap/js/input.js" language="javascript"></script>
+                <script type="text/javascript" src="js/main.js" language="javascript"></script>
+		<!--  Attach the plug-in to the slider parent element and adjust the settings as required -->
+		<script  type="text/javascript" language="javascript">
+		      $(document).ready(function() {
+		        
+		        $('#banner').bjqs({
+		          'animation' : 'slide',
+		          'width' : 960,
+		          'height' : 450
+		        });
+		        
+		      });
+		    </script>
+		<SCRIPT LANGUAGE="javascript">
+		function controle(recherche) {
+		var search = document.recherche.champ.value;
+		location.href="/search/"+search;
+		}
+		</SCRIPT>     
+		<script type="text/javascript" src="bootstrap/js/pie.js" language="javascript"></script>
+		<style type="text/css">
+		ul.bjqs h1, ol.bjqs-markers li a {
+			behavior: url("js/PIE.htc") !important;
+		}
+		</style>
+    </head>
+    <body>
+    	<!--Header Start Here-->
+<div id="header">
+  <div id="top_header">
+    <div class="center_frame">
+      <div class="top">
+        <div class="search"></div>
+        <div class="login"> <a href="login.html" id="loginpage" class="login_img">&nbsp;</a> <a href="inscription.html" id="inscriptionpage" class="register">&nbsp;</a> </div>
+      </div>
+    </div>
+  </div>
+  <!--Top Header End Here-->
+  <div id="logo_nav">
+    <div class="bg1">
+      <div class="center_frame"> 
+        <!--Logo And Navigation Start Here-->
+        <div class="logo"><img src="bootstrap/img/logo.png" alt=""  /> </div>
+
+        <!--Logo And Navigation End Here--> 
+        <!--slider here-->
+        
+        <!--  Outer wrapper for presentation only, this can be anything you like -->
+        <div id="banner"> 
+          <!-- start Basic Jquery Slider -->
+          <ul class="bjqs">
+            <li>
+              <h1>Projet Tweet</h1>
+              <p>On a utilise le maven.</p>
+              <label><a href="#" class="pap"></a></label>
+            </li>
+            <li>
+              <h1>Notre Groupe</h1>
+              <p>Nous somme cinq.</p>
+              <label><a href="#" class="pap"></a></label>
+            </li>
+            <li>
+              <h1>Les menbre</h1>
+              <p></p>
+              <label><a href="#" class="pap"></a></label>
+            </li>
+          </ul>
+          <!-- end Basic jQuery Slider --> 
+        </div>
+        <!-- End outer wrapper --> 
+        
+        <!--slider end here--> 
+        
+      </div>
+    </div>
+  </div>
+</div>
+

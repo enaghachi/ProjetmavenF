@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>tweety</title>
+        <link href="bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+        
+		<!--[if IE 7]><link rel="stylesheet" media="all" type="text/css" href="bootstrap/css/ie7.css" />
+		<![endif]-->
+		<!--[if IE 8]><link rel="stylesheet" media="all" type="text/css" href="bootstrap/css/ie8.css" />
+		<![endif]-->
+		<link href="bootstrap/fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+		<!--slidercss-->
+		<link rel="stylesheet" href="bootstrap/css/basic-jquery-slider.css" />
+		<script src="bootstrap/js/jquery-1.6.2.min.js" type="text/javascript" language="javascript"></script>
+		<script src="bootstrap/js/basic-jquery-slider.js"  type="text/javascript" language="javascript"></script>
+		<script type="text/javascript" src="bootstrap/js/custom.js" language="javascript"></script>
+		<script type="text/javascript" src="bootstrap/js/input.js" language="javascript"></script>
+                <script type="text/javascript" src="js/main.js" language="javascript"></script>
+		<!--  Attach the plug-in to the slider parent element and adjust the settings as required -->
+		<script  type="text/javascript" language="javascript">
+		      $(document).ready(function() {
+		        
+		        $('#banner').bjqs({
+		          'animation' : 'slide',
+		          'width' : 960,
+		          'height' : 450
+		        });
+		        
+		      });
+		    </script>
+		<SCRIPT LANGUAGE="javascript">
+		function controle(recherche) {
+		var search = document.recherche.champ.value;
+		location.href="/search/"+search;
+		}
+		</SCRIPT>     
+		<script type="text/javascript" src="bootstrap/js/pie.js" language="javascript"></script>
+		<style type="text/css">
+		ul.bjqs h1, ol.bjqs-markers li a {
+			behavior: url("js/PIE.htc") !important;
+		}
+		</style>
+    </head>
+    <body>
+    	<!--Header Start Here-->
+<div id="header">
+  <div id="top_header">
+    <div class="center_frame">
+      <div class="top">
+        <div class="search"></div>
+        <div class="login"> <a href="tweety.html" class="login_img">&nbsp;</a> <a href="inscription.html" class="register">&nbsp;</a> </div>
+      </div>
+    </div>
+  </div>
+  <!--Top Header End Here-->
+  <div id="logo_nav">
+    <div class="bg">
+      <div class="center_frame"> 
+        <!--Logo And Navigation Start Here-->
+        <div class="logo"></div>
+        <!--Logo And Navigation End Here--> 
+        <!--CHANGE ONLY THIS PART HERE--> 
+        
+        <!--Project Top Start Here -->
+        <div id="register_details">
+		<form  id="inscription" method="post">
+		<h6> Inscription </h6> 
+		
+			<input type="text" id="username" name="username" placeholder="username" class="input_1">
+                        <input type="text" id="email" name="email" placeholder="Email" class="input_4">                      
+			<select id ="sexe" class="input_3">
+			<option name="sexe" value="male">Male</option>
+			<option name="sexe" value="female">Female</option></select>			
+			<input type="password" id="password" name="password" placeholder="password" class="input_2">                      
+			<input type="submit" class="register_img" id="adduser" name="bouton" />   
+
+                </form>
+        </div>
+        <!--Project Top Start Here --> 
+        <!--CHANGE ONLY UPERE PART IN INNER PAGES--> 
+      </div>
+    </div>
+  </div>
+</div>
+<!--Header End Here--> 
+<!--slider start here--> 
+
+<!--Wrapper Start Here-->
+<div id="wrapper"><!--Top Wrapper End Here--> 
+  <!--Main Contant Start Here-->
+  <div id="main_contant">
+    <div class="center_frame"></div>
+  </div>
+  <!-- Main Contant End Here --> 
+</div>
+<!--Wrapper End Here-->
+
+</body>
+
+	}
+
